@@ -9,11 +9,10 @@
     </head>
     <body style="font-size: 12px;">
         <div class="app">
-            <!-- 首页 -->
             <div class="content">
                 <div class="content_top">
-                    <p>﹁<span>有趣的灵魂</span>﹂光芒万丈,</p>
-                        <p>﹁<span>盖世的才华</span>﹂怎能隐藏?</p>
+                    <p>﹁<span>也许冥冥之中</span>﹂早已注定,</p>
+                        <p>﹁<span>你是属于这座城市的</span>﹂</p>
                         <p class="say-pt___T7iM64Ie_0">不要压抑自己,</p>
                         <p class="say-pt___T7iM64Ie_0">请任性作答!</p>
                     </div> 
@@ -25,43 +24,137 @@
                         </div>
                     </div>
             </div> 
-            <div class="question">
-                <div class="wrap">
-                    <div class="box">
-                        <h3 class="title">第 1 题</h3>
-                         <p class="ask">你会选择下列哪个场景作为小说故事开始的地点</p>
+           <!-- <div class="progress">
+                <div class="progress-bar">
+                    <div style="width: 0%;">
                     </div>
-                    <div class="answers">
-                        <p class="item_choice">医院</p>
-                        <p class="item_choice">车站</p>
-                        <p class="item_choice">教堂</p>
-                    </div>
-                </div> 
-                <div class="progress">
-                    <div class="progress-bar">
-                        <div style="width: 0%;">
-                        </div>
-                    </div>
-                    <ul class="progress-list">
-                        <li><i class="progress-1"></i></li>
-                        <li><i class="progress-0"></i></li>
-                        <li><i class="progress-0"></i></li>
-                        <li><i class="progress-0"></i></li>
-                        <li><i class="progress-0"></i></li>
-                    </ul>
                 </div>
-            </div>
+                <ul class="progress-list">
+                    <li><i class="progress-1"></i></li>
+                    <li><i class="progress-0"></i></li>
+                    <li><i class="progress-0"></i></li>
+                    <li><i class="progress-0"></i></li>
+                    <li><i class="progress-0"></i></li>
+                </ul>
+            </div> -->
         </div>
+        <div class="content content_2 dis-n">
+            <div class="content_top">
+                <p><span>有的人天生属于威尼斯悠长蜿蜒的水道，</span></p>
+                <p><span>有的人将自己许给了芬兰圣诞村曼妙的极光，</span></p>
+                <p><span>而有的人注定要与哥本哈根的童话世界缠绵一生……</span></p>
+                <p class="say-pt___T7iM64Ie_0">做个小测试，</p>
+                <p class="say-pt___T7iM64Ie_0">来看看哪一座城市是你的灵魂伴侣呢？</p>
+            </div> 
+        </div> 
+        <div class="question_1 dis-n">
+            <div class="wrap">
+                <div class="box">
+                    <h3 class="title">第 1 题</h3>
+                     <p class="ask">如果要你拥有一座房子，并在那里度过一生，你会选择以下哪一种？</p>
+                </div>
+                <div class="answers">
+                    <p class="item_choice">海滨小屋</p>
+                    <p class="item_choice">摩天顶楼</p>
+                    <p class="item_choice">老街阁楼</p>
+                </div>
+            </div> 
+        </div>
+        <div class="question_2 dis-n">
+            <div class="wrap">
+                <div class="box">
+                    <h3 class="title">第 2 题</h3>
+                    <p class="ask">倘若你在海上旅行时遭遇海难，醒来时身处荒岛，那么你希望在你身边看到的是：</p>
+                </div>
+                <div class="answers">
+                    <p class="item_choice">你的爱人</p>
+                    <p class="item_choice">一个陌生异性</p>
+                    <p class="item_choice">四下无人，只有自己</p>
+                </div>
+            </div> 
+        </div>
+        <div class="question_3 dis-n">
+            <div class="wrap">
+                <div class="box">
+                    <h3 class="title">第 3 题</h3>
+                    <p class="ask">有一天，你发现自己拥有了三百万美金的资产，你会怎么做？</p>
+                </div>
+                <div class="answers">
+                    <p class="item_choice">来历不明的钱财，先报警</p>
+                    <p class="item_choice">花完，爽了再说</p>
+                    <p class="item_choice">一部分投资，钱生钱，借此发家</p>
+                </div>
+            </div> 
+        </div>
+        <div class="question_4 dis-n">
+            <div class="wrap">
+                <div class="box">
+                    <h3 class="title">第 4 题</h3>
+                    <p class="ask">如果你的周围只能出现一种颜色，那你希望它是什么颜色？</p>
+                </div>
+                <div class="answers">
+                    <p class="item_choice">红色</p>
+                    <p class="item_choice">蓝色</p>
+                    <p class="item_choice">灰色</p>
+                </div>
+            </div> 
+        </div>
+        <div class="result dis-n">
+            <div class="content_top">
+                <p><span>XXX城市，这里才是你的归宿。形成城市图。</span></p>
+            </div> 
+        </div>
+        <div class="tips dis-n" ><p class="content-tip">请输入名字</p></div>
     </body>
     <script type="text/javascript" src="../wzl/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
+        var result;
+        var name;
+        var data;
         function start(){
-            $('.content').hide();
+            $('.app').hide();
+            $('.question_1').show();
+            name=$('.body-input').val();
+            // if(name){
+            //     $('.app').hide();
+            //     $('.question_1').show();
+            // }else{
+            //     alert('请输入姓名~')
+            // }
         }
         $(function(){
-            $(".body_btn").click(function(){
-               
-            })
+            $.ajax({
+                url:'../wzl/data/data.josn',
+                type : "GET",
+                dataType : "jsonp", 
+                jsonp : 'callback', 
+                jsonpCallback: 'handleResponse', 
+                success:function(data){
+                    data=data;
+                }   
+            });
+            $('.question_1 .item_choice').click(function(){
+                var index=$(this).index()+1;
+                result=index+'1';
+                $('.question_1').hide();
+                $('.question_2').show();
+            });
+            $('.question_2 .item_choice').click(function(){
+                var index=$(this).index()+1;
+                result+=index+'2';
+                $('.question_2').hide();
+                $('.question_3').show();
+            });
+            $('.question_3 .item_choice').click(function(){
+                var index=$(this).index()+1;
+                result+=index+'3';
+                $('.question_3').hide();
+                $('.question_4').show();
+            });
+            $('.question_4 .item_choice').click(function(){
+                var index=$(this).index()+1;
+                result+=index+'4';
+            });
         })
     </script>
 </html>

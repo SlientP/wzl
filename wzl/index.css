@@ -5,6 +5,9 @@
 [data-dpr="2"] body {
     max-width: 1500px;
 }
+html{
+    height: 100%;
+}
 body {
     font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue","Helvetica","Arial",sans-serif;
     font-size: 12px;
@@ -53,16 +56,20 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     line-height: 1.5;
 }
+.dis-n{
+    display: none
+}
 .app {
-    min-height: 100%;
-    background: url(https://easyread.nosdn.127.net/fle/a0df1d4009c7a2ec5fee/activities/images/bg.40ff929e.jpg) repeat-y top;
-    background-size: 100%;
+    height: 100%;
+    background: url(../wzl/images/6.jpg)  top;
+    background-size:cover;
 }
 .content{
-    background: url( https://easyread.nosdn.127.net/fle/a0df1d4009c7a2ec5fee/activities/images/cover_home.1c136b0e.png) no-repeat top;
-    background-size: 100%;
     position: relative;
-    padding: 2.64rem 0 1rem;
+    height: 100%;
+}
+.content_2{
+    background: url(../wzl/images/7.jpg)  top;
 }
 .content_top{
     display: -ms-flexbox;
@@ -71,6 +78,8 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row-reverse;
     margin-right: 2.4rem;
     margin-bottom: .9rem;
+    color: red;
+    padding: 2.64rem 0 1rem;
 }
 .content_top p {
     width: .64rem;
@@ -88,6 +97,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     overflow: hidden;
     background-color: #fff;
+    opacity: 0.8;
 }
 .box:before {
     content: "";
@@ -130,15 +140,34 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     padding: 0 1.6rem;
 }
-.question {
-    background: url(https://easyread.nosdn.127.net/fle/a0df1d4009c7a2ec5fee/activities/images/cover_answer.3cdecbcb.png) no-repeat top;
-    background-size: 100%;
+.question_1 {
+    background: url(../wzl/images/7.jpg)  top;
+    background-size: cover;
     position: relative;
-    padding: 5.72rem 0 1rem;
+    height: 100%;
+}
+.question_2 {
+    background: url(../wzl/images/1.jpg)  top;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+}
+.question_3 {
+    background: url(../wzl/images/2.jpg)  top;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+}
+.question_4 {
+    background: url(../wzl/images/3.jpg)  top;
+    background-size: cover;
+    position: relative;
+    height: 100%;
 }
 .wrap {
     width: 12rem;
     margin: 0 auto;
+    padding: 5.72rem 0 1rem
 }
 .title {
     position: absolute;
@@ -157,6 +186,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .answers{
     background-color: #fff;
+    opacity: 0.8;
 }
 .item_choice{
     border: 1px solid #232323;
@@ -188,4 +218,24 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     border-radius: 50%;
     margin-right: .4rem;
+}
+
+.tips {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 102;
+}
+.content-tip {
+    min-width: 6.4rem;
+    padding: .4rem;
+    word-wrap: break-word;
+    font-size: .56rem;
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    border-radius: .16rem;
+    background-color: rgba(0,0,0,.7);
+    animation: a .75s ease;
 }
