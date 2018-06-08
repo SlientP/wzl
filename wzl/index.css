@@ -1,0 +1,191 @@
+
+[data-dpr="1"] body {
+    max-width: 750px;
+}
+[data-dpr="2"] body {
+    max-width: 1500px;
+}
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #4a4a4a;
+    background-color: #fff;
+    margin: 0 auto;
+    height: 100%;
+    overflow: auto;
+}
+hr, ol, p, table, ul {
+    margin: 0;
+    padding: 0;
+}
+button, input, select, textarea {
+    border: 0;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    line-height: normal;
+}
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.app {
+    min-height: 100%;
+    background: url(https://easyread.nosdn.127.net/fle/a0df1d4009c7a2ec5fee/activities/images/bg.40ff929e.jpg) repeat-y top;
+    background-size: 100%;
+}
+.content{
+    background: url( https://easyread.nosdn.127.net/fle/a0df1d4009c7a2ec5fee/activities/images/cover_home.1c136b0e.png) no-repeat top;
+    background-size: 100%;
+    position: relative;
+    padding: 2.64rem 0 1rem;
+}
+.content_top{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    margin-right: 2.4rem;
+    margin-bottom: .9rem;
+}
+.content_top p {
+    width: .64rem;
+    font-size: .64rem;
+    text-align: center;
+    line-height: 1.2;
+    word-wrap: break-word;
+    margin: 0 .2rem;
+}
+.box {
+    width: 12rem;
+    margin: 0 auto;
+    border: 1px solid #232323;
+    border-radius: .08rem;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+}
+.box:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1.08rem;
+    background-color: #232323;
+}
+.box_body {
+    padding: .8rem 1.12rem;
+    text-align: center;
+    background-color: #f3f8f7;
+}
+.body-title {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: .64rem;
+}
+.body-input {
+    display: block;
+    width: 100%;
+    font-size: .56rem;
+    line-height: 1;
+    text-align: left;
+    padding: .3rem .4rem;
+    margin: .6rem 0;
+    border: 1px solid #232323;
+    border-radius: .08rem;
+    box-shadow: inset 0 0 0.2rem 0 rgba(0,0,0,.22);
+}
+.body-btn {
+    height: 1.48rem;
+    background-color: #2a51af;
+    border-radius: .74rem;
+    font-size: .56rem;
+    color: #fff;
+    padding: 0 1.6rem;
+}
+.question {
+    background: url(https://easyread.nosdn.127.net/fle/a0df1d4009c7a2ec5fee/activities/images/cover_answer.3cdecbcb.png) no-repeat top;
+    background-size: 100%;
+    position: relative;
+    padding: 5.72rem 0 1rem;
+}
+.wrap {
+    width: 12rem;
+    margin: 0 auto;
+}
+.title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    font-size: .56rem;
+    color: #fff;
+    line-height: .96rem;
+    text-align: center;
+}
+.ask {
+    font-size: .6rem;
+    padding: .96rem;
+}
+.answers{
+    background-color: #fff;
+}
+.item_choice{
+    border: 1px solid #232323;
+    border-radius: .08rem;
+    padding: .72rem;
+    margin-top: .48rem;
+    font-size: .56rem;
+    display: -ms-flexbox;
+    display: flex;
+}
+.item_choice:first-child:before {
+    content: "A";
+    background-color: #c4e8e4;
+}
+.item_choice:nth-child(2):before {
+    content: "B";
+    background-color: #ffe2e9;
+}
+.item_choice:nth-child(3):before {
+    content: "C";
+    background-color: #d4d6dd;
+}
+.item_choice:before {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: .84rem;
+    height: .84rem;
+    line-height: .84rem;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: .4rem;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html data-dpr="1" style="font-size: 50px;">
+    <head>
+        <title>城市测试</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no">
+        <link rel="stylesheet" href="../wzl/index.css" />
+        
+    </head>
+    <body style="font-size: 12px;">
+        <div class="app">
+            <!-- 首页 -->
+            <div class="content">
+                <div class="content_top">
+                    <p>﹁<span>有趣的灵魂</span>﹂光芒万丈,</p>
+                        <p>﹁<span>盖世的才华</span>﹂怎能隐藏?</p>
+                        <p class="say-pt___T7iM64Ie_0">不要压抑自己,</p>
+                        <p class="say-pt___T7iM64Ie_0">请任性作答!</p>
+                    </div> 
+                    <div class="box">
+                        <div class="box_body">
+                            <p class="body-title">请输入你的名字</p>
+                                <input type="text" maxlength="16" placeholder="请输入名字，不超过8个字" class="body-input"> 
+                                <button class="body-btn" onclick="start()">开始测试</button>
+                        </div>
+                    </div>
+            </div> 
+            <div class="question">
+                <div class="wrap">
+                    <div class="box">
+                        <h3 class="title">第 1 题</h3>
+                         <p class="ask">你会选择下列哪个场景作为小说故事开始的地点</p>
+                    </div>
+                    <div class="answers">
+                        <p class="item_choice">医院</p>
+                        <p class="item_choice">车站</p>
+                        <p class="item_choice">教堂</p>
+                    </div>
+                </div> 
+                <div class="progress">
+                    <div class="progress-bar">
+                        <div style="width: 0%;">
+                        </div>
+                    </div>
+                    <ul class="progress-list">
+                        <li><i class="progress-1"></i></li>
+                        <li><i class="progress-0"></i></li>
+                        <li><i class="progress-0"></i></li>
+                        <li><i class="progress-0"></i></li>
+                        <li><i class="progress-0"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="../wzl/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        function start(){
+            $('.content').hide();
+        }
+        $(function(){
+            $(".body_btn").click(function(){
+               
+            })
+        })
+    </script>
+</html>
