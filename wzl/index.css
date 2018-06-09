@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row-reverse;
     margin-right: 2.4rem;
     margin-bottom: .9rem;
-    color: red;
+    color: white;
     padding: 2.64rem 0 1rem;
 }
 .content_top p {
@@ -98,6 +98,7 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     background-color: #fff;
     opacity: 0.8;
+    border-radius: 50px;
 }
 .box:before {
     content: "";
@@ -238,4 +239,8 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: .16rem;
     background-color: rgba(0,0,0,.7);
     animation: a .75s ease;
+}
+.result{
+    background-size: cover;
+    height: 100%;
 }
